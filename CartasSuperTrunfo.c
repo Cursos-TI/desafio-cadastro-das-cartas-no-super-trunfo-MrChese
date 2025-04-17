@@ -1,22 +1,49 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    char estado; 
+    char codigo[2];
+    char cidade[20];
+    float area;
+    float populacao;
+    float pib;
+    float turismo;
+
+    printf(" seja bem vindo ao jogo Super Trunfo \n");
+    printf("para começar digite a primeira letra do seu estado:\n ");
+    scanf("%c", &estado);
+
+    printf("agora digite escolha um codigo de 2 digitos para sua carta:\n");
+    scanf("%c", &codigo);
+
+    printf("digite o nome da sua cidade: \n");
+    scanf("%s", &cidade);
+
+    printf("digite quantos km² sua cidade tem:\n");
+    scanf("%f", &area);
+
+    printf("digite o numero da população da sua cidade:\n");
+    scanf("%f", &populacao);
+
+    Printf("digit o PIB da sua cidade: \n");
+    scanf("%f", &pib);
+
+    printf("para finalizar digite o numero de pontos turisticos da sua cidade:\n");
+    scanf("%f", &turismo);
+
+    printf(" no final sua carta ficou:\n");
+
+    printf("Estado: %c \n", estado);
+
+    printf("Codigo da Carta: %s \n", codigo);
+
+    printf("Area em km²: %s \n", area);
+
+    printf("População da cidade: %s \n", populacao);
+
+    printf("PIB: %f \n", pib);
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("Pontos turisticos %c \n", turismo);
 
     return 0;
 }
