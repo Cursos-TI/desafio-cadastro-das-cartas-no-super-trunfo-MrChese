@@ -10,6 +10,8 @@ int main() {
     float turismo;
     float densidade;
     float PibPerCapito;
+    long double resultado;
+    float DensidadeInvertida;
 
     printf(" seja bem vindo ao jogo Super Trunfo \n");
     printf("para começar digite a primeira letra do seu estado:\n ");
@@ -33,6 +35,10 @@ int main() {
     printf("para finalizar digite o numero de pontos turisticos da sua cidade:\n");
     scanf("%f", &turismo);
 
+     DensidadeInvertida = (1 / densidade);
+
+    resultado = ( populacao + area + pib + DensidadeInvertida + turismo + PibPerCapito );
+    
     PibPerCapito = (pib / populacao);
 
     densidade = (populacao / area);
@@ -55,7 +61,9 @@ int main() {
 
     printf("o Pib Per Capito é igual a: %f \n", PibPerCapito);
 
-    printf("a densidade populacional é de %f hab/km²: \n", densidade);
+    printf("a densidade populacional é de %0.2f hab/km²: \n", densidade);
+
+    printf("o super poder é de %ld : \n", resultado);
 
     return 0;
 }
