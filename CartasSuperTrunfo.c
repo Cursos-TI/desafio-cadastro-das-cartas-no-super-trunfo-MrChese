@@ -119,7 +119,7 @@ int main() {
 
     printf("a densidade populacional é de %0.2f hab/km²: \n", densidade2);
 
-    printf("o super poder é de %ld : \n", resultado2);
+    printf("o super poder é de %ld : \n", resultado2); // não consegui consertar esse super pode por nada, ele sempre da um numero muito alto
 
     
     printf("Agora você pode escolher dois atributos da carta para comparar e escolher o vencedor:\n");
